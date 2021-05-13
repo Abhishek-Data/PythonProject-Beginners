@@ -1,0 +1,50 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.example-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+.main {
+  /* display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to top,
+    rgba(67, 220, 235, 0.3),
+    rgba(112, 69, 222, 0.52)
+  ); */
+}
+.content {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  /* background: #65dfc9; */
+  /* background: linear-gradient(to right top, #65dfc9, #6cdbeb); */
+  background: linear-gradient(
+    to right,
+    rgba(238, 206, 142, 0.7),
+    rgba(240, 199, 157, 0.7)
+  );
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+.container1 {
+  /* min-height: 80vh;
+  width: 100%;
+  border-radius: 2rem;
+  z-index: 2;
+  display: flex; */
+}

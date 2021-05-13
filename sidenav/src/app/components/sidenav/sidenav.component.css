@@ -1,0 +1,18 @@
+img {
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+  display: block;
+  /* -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 20px;
+  line-height: 50px; */
+}
+.logo {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding: 20px;
+  line-height: 50px;
+}

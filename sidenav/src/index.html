@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DigitalMarketingManagementSystem</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+  </head>
+  <body class="mat-typography">
+    <app-root></app-root>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <script>
+      $(function () {
+        $("#welcome").hide();
+
+        for (let i = 0; i < 5; i++) {
+          $(".wrapper").append('<div class="square"></div>');
+        }
+
+        var degrees = -10;
+        $(".square").each(function () {
+          $(this).css("transform", `rotate(${degrees}deg)`);
+          degrees += 3;
+        });
+
+        $("#button").click(function () {
+          $("#form").hide();
+          $(".square").each(function () {
+            $(this).css({ transform: "rotate(360deg)", transition: "4s" });
+          });
+
+          setTimeout(function () {
+            $("#welcome").css("display", "flex");
+          }, 3900);
+        });
+      });
+    </script>
+  </body>
+</html>
